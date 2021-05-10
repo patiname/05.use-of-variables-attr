@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr</title>
+
+    <style>
+
+        .img_size{
+            width:300px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            // *attr
+            // =>태그가 가지고 있는 속성값을 추가하거나 변경할때 사용
+            
+            $('img').click(function(){
+                $('img').attr({
+                    alt:"안녕!",
+                    src: "https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?size=626&ext=jpg",
+                    class:'img_size'
+                })
+            });
+            
+
+        });//end
+
+    </script>
+</head>
+<body>
+
+    <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="">
+    
+</body>
+</html>

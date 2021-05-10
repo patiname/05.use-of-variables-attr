@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 활용</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            var i = 0;
+
+            $('.box').css({
+                width:300,
+                height:300,
+                backgroundColor:'salmon'
+            }).click(function(){
+                if(i === 0){
+                    $(this).css({
+                        backgroundColor:'teal'
+                    });
+                    i++;
+                }else if(i === 1){
+                    $(this).css({
+                        backgroundColor:"salmon"
+                    });
+                    i++;
+                }else if(i === 2){
+                    $(this).css({
+                        backgroundColor:"gold"
+                    });
+                    i = 0;
+                }
+                console.log(i);
+            });
+
+
+
+
+        });//end
+
+    </script>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

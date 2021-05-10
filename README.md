@@ -1,1 +1,1 @@
-##05.use-of-variables-attr
+##05.변수의 활용,attr
